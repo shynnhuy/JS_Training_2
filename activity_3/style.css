@@ -1,0 +1,39 @@
+body {
+  background-color: #d3d3d3;
+  height: 100vh;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  bottom: 40px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.right {
+  right: 40px;
+  background-color: #0c9000;
+}
+
+.left {
+  left: 40px;
+  background-color: #f15e5e;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+.divider {
+  border-top: 3px solid #bbb;
+}

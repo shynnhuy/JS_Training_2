@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 1 - Nguyễn Xuân Huy</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1 class="text-center">Exercise 1</h1>
+    <div class="row pb-3">
+      <div class="col-md-5 pb-3 pl-md-5">
+        <div class="card p-3">
+          <form>
+            <div class="form-group row">
+              <label for="firstName" class="col-sm-3 col-form-label"
+                >First Name:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastName" class="col-sm-3 col-form-label"
+                >Last Name:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="score" class="col-sm-3 col-form-label">Score:</label>
+              <div class="col-sm-9">
+                <input type="number" class="form-control" id="score" />
+              </div>
+            </div>
+            <div class="btn-group w-100" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                onclick="okFunc()"
+              >
+                OK
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                onclick="clearFunc()"
+              >
+                CLEAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-7 pb-3 pr-md-5 h-100 overflow-hidden">
+        <div class="card p-3 card-table">
+          <table class="table table-bordered table-striped" id="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Score</th>
+                <th scope="col">Result</th>
+                <th scope="col">Mention</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <a href="../index.html" class="float left">
+      <i class="fa fa-arrow-left my-float"></i>
+    </a>
+    <a href="../activity_2/" class="float right">
+      <i class="fa fa-arrow-right my-float"></i>
+    </a>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Xuân Huy - 17CNTT1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #d3d3d3;
+      }
+
+      .center-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body class="min-vh-100 w-100 center-all">
+    <div class="card center-all p-3 w-25">
+      <h3 class="mb-3">Homework</h3>
+      <button
+        class="btn btn-outline-primary btn-block mb-3"
+        onclick="redirectPage('activity_1')"
+      >
+        Activity 1
+      </button>
+      <button
+        class="btn btn-outline-success btn-block mb-3"
+        onclick="redirectPage('activity_2')"
+      >
+        Activity 2
+      </button>
+      <button
+        class="btn btn-outline-warning btn-block"
+        onclick="redirectPage('activity_3')"
+      >
+        Activity 3
+      </button>
+    </div>
+
+    <script>
+      const redirectPage = (page) => {
+        window.location.href = "./" + page;
+      };
+    </script>
+  </body>
+</html>

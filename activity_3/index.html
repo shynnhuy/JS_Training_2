@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 3 - Nguyễn Xuân Huy</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="center-all py-sm-3">
+    <div class="card px-5 py-3 center-all">
+      <h3>
+        Exercise 3 - Calculator
+      </h3>
+      <div class="divider"></div>
+      <form class="w-100">
+        <div class="form-group">
+          <label for="num_one">Number A (*)</label>
+          <input type="number" class="form-control" id="num_one" />
+        </div>
+        <div class="form-group">
+          <label for="num_two">Number B (*)</label>
+          <input type="number" class="form-control" id="num_two" />
+        </div>
+        <div class="row mb-2 align-items-center">
+          <div class="col-6">Summation:</div>
+          <div class="col-6">
+            <button type="button" class="btn btn-success" onclick="calculate('add')">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2 align-items-center">
+          <div class="col-6">Subtraction:</div>
+          <div class="col-6">
+            <button type="button" class="btn btn-danger" onclick="calculate('minus')">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2 align-items-center">
+          <div class="col-6">Multiplication:</div>
+          <div class="col-6">
+            <button type="button" class="btn btn-info" onclick="calculate('multiply')">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2 align-items-center">
+          <div class="col-6">Division:</div>
+          <div class="col-6">
+            <button type="button" class="btn btn-warning" onclick="calculate('divide')">
+              <i class="fas fa-divide"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="form-group">
+          <label for="result">Result of A <span id="operand">&</span> B</label>
+          <input type="number" readonly class="form-control" id="result" />
+        </div>
+      </form>
+    </div>
+
+    <a href="../activity_2/" class="float left">
+      <i class="fa fa-arrow-left my-float"></i>
+    </a>
+    <a href="../index.html" class="float right">
+      <i class="fa fa-arrow-right my-float"></i>
+    </a>
+    <script src="./script.js"></script>
+  </body>
+</html>
